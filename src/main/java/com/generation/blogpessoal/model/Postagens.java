@@ -38,6 +38,10 @@ public class Postagens {
 	@ManyToOne
 	@JsonIgnoreProperties("postagens")
 	private Tema tema;// essa variavel tema pertence ao objeto Tema
+	
+	@ManyToOne
+	@JsonIgnoreProperties("postagens")
+	private Usuario usuario;
 
 	public Tema getTema() {
 		return tema;
