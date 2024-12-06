@@ -10,6 +10,8 @@ import com.generation.blogpessoal.model.Postagens;
 public interface PostagemRepository extends JpaRepository<Postagens, Long>{
 	
 	public List<Postagens> findAllByTituloContainingIgnoreCase(@Param("titulo")String titulo);
+	
+	//repository é responsável por inejtar as informações do banco de dados e quando vamos precisar de informações do banco de dados ela é injetava na classe com @autowired
 
 }
 
